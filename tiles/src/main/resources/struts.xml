@@ -5,7 +5,7 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 
-	<package name="basicstruts" extends="struts-default">
+	<package name="basicstruts2" extends="struts-default">
 		<interceptors>
 			<interceptor-stack name="appDefault">
 				<interceptor-ref name="timer" />

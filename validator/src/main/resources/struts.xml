@@ -5,7 +5,7 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 
-	<package name="basicstruts" extends="struts-default">
+	<package name="validator" extends="struts-default">
 		<interceptors>
 			<interceptor-stack name="appDefault">
 				<interceptor-ref name="timer" />
@@ -17,16 +17,10 @@
 		<default-interceptor-ref name="appDefault" />
 		<default-action-ref name="index"/>
 
-		<action name="index">
-			<result>/index.jsp</result>
+		<action name = "index" class = "com.example.validator.action.InputAction" method = "execute">
+			<result name="input">/index.jsp</result>
+			<result name="success">/success.jsp</result>
 		</action>
 
-		<action name="hello" class="com.example.basicstruts.action.HelloWorldAction" method="execute">
-			<result name="success">/HelloWorld.jsp</result>
-		</action>
-
-		<action name="register" class="com.example.basicstruts.action.RegisterAction" method="execute">
-			<result name="success">/thankyou.jsp</result>
-		</action>
 	</package>
 </struts>

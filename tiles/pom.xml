@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>basicstruts</artifactId>
+  <artifactId>tiles</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>basicstruts Maven Webapp</name>
+  <name>tiles Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,6 +19,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <struts2.version>2.5.26</struts2.version>
     <log4j2.version>2.14.1</log4j2.version>
+    <tiles.version>2.5.26</tiles.version>
   </properties>
 
   <dependencies>
@@ -44,11 +45,16 @@
       <artifactId>log4j-api</artifactId>
       <version>${log4j2.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-tiles-plugin</artifactId>
+      <version>${tiles.version}</version>
+    </dependency>
 
   </dependencies>
 
   <build>
-    <finalName>basicstruts</finalName>
+    <finalName>tiles</finalName>
     <pluginManagement>      <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
