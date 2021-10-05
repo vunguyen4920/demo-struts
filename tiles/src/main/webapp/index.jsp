@@ -21,42 +21,11 @@
 
 
         <div class="flex">
-            <img 
-                src="https://www.pngkit.com/png/full/321-3212141_struts-logo-apache-struts-2.png" 
-                alt="struts-logo" 
-                style="width: 10%;height:22%"
-            />
-            <h1>Welcome To Struts 2!</h1>
-
-            <%-- Simple hello world --%>
-            <p><a href="<s:url action='hello'/>">Hello World</a></p>
-
-            <%-- Hello world with query string --%>
-            <p><a href="${helloLink}">Hello World with params</a></p>
-
-            <%-- Submit username to HelloWorldAction --%>
-            <div class="bordered">
-                <h3>Could you please tell me your name?</h3>
-                <s:form action="hello">
-                    <s:textfield name="userName" label="Your name" />
-                    <s:submit value="Submit" />
-                </s:form>
-            </div>
-
-            <%-- Processing Forms --%>
-            <div class="bordered">
-                <h3>Simple Register Form</h3>
-
-                <s:form action="register">
-                    <s:textfield name="personBean.firstName" label="First name" />
-                    <s:textfield name="personBean.lastName" label="Last name" />
-                    <s:textfield name="personBean.email"  label ="Email"/>  
-                    <s:textfield name="personBean.age"  label="Age"  />
-                    <s:submit/>
-                </s:form>
-            </div>
-
-            
+            <s:form action="login">  
+                <s:textfield name="name" label="Name"></s:textfield>  
+                <s:password name="password" label="Password"></s:password>  
+                <s:submit value="login"></s:submit>  
+            </s:form>  
         </div>
     </body>
 </html>
