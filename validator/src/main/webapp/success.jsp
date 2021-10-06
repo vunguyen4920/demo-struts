@@ -13,7 +13,7 @@
    <body>
 	<div class="flex">
 		<img src="https://www.pinclipart.com/picdir/big/574-5744188_us-dealer-licensing-is-your-shield-check-marked.png" alt="checkmark" style="height: 50px" />
-		<p>Chứng nhận tiêm COVID-19</p>
+		<p>COVID-19 Certified</p>
 	</div>
    </body>
 </html>
