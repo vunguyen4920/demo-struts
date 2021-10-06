@@ -8,18 +8,6 @@
         <title>Basic Struts 2 Application - Welcome</title>
     </head>
     <body>
-        <%-- URL variables --%>
-        <s:url action="hello" var="helloLink">
-            <s:param name="userName">John Doe</s:param>
-        </s:url>
-
-        <s:url action="tiles" var="tilesLink">
-        </s:url>
-
-        <s:url action="validator" var="validatorLink">
-        </s:url>
-
-
         <div class="flex">
             <s:form action="login">  
                 <s:textfield name="name" label="Name"></s:textfield>  
